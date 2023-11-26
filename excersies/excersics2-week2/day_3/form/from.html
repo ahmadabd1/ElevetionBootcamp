@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="container">
+        <div id="form" >
+            <h1>Form Empolyee</h1>
+            <div >
+                <p>Name</p>
+                <input type="text" id="name" name="name" required minlength="2"  size="10" />
+            </div>
+
+
+            <div class="saldate">
+                <div>
+                    <p>Desird Salary</p>
+                    <input type="text" id="salary" name="salary" required minlength="2"  size="10" />
+                </div>
+                <div>
+                    <p>Birthday</p>   
+                    <input type="text" id="birthday" name="birthday" required minlength="2"  size="10" />
+                </div>
+            </div>
+            <div>
+                <p>Phone</p>   
+                <input type="text" id="phone" name="phone" required minlength="2"  size="10" />
+            </div>
+
+
+
+            <button class="btn" id="btn" type="button" onclick="validate()">submit</button>
+            <div id="msg"></div>
+
+        </div>
+        <div id="welcomemsg"></div>
+        
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

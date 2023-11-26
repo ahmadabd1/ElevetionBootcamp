@@ -1,0 +1,9 @@
+form{
+    position: relative;
+    left: 500px;
+    top: 100px;
+}
+
+.styled{
+    background-color: green;
+}
