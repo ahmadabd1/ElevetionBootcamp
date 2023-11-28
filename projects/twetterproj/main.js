@@ -3,26 +3,34 @@ const res = tweeter.getPosts()
 
 render = renderPosts(res)
 
-
-// renderPosts(posts)
-const post=function(){
+const post = function () {
     const np = $("#input").val()
     tweeter.addPost(np)
-    const ahmad = tweeter.getPosts()
-    renderPosts(ahmad)
+    const ren = tweeter.getPosts()
+    renderPosts(ren)
 }
-// const addComment = function(){
-//     const nc = $("#nComment").val()
-//     tweeter.addComment(np)
-//     const ahmad = tweeter.getPosts()
-//     renderPosts(ahmad)
 
-// }
-$("button").on("click",function(){
-    const nc = $("#nComment").val()
-    tweeter.addComment(nc,"p1")
-    const ahmad = tweeter.getPosts()
-    renderPosts(ahmad)
+$("#posts").on("click", "button", function () {
+
+    const path = $(this).attr('id')
+    const dataDeletBtn = $(this).data("btn")
+    if (dataDeletBtn === "delete") {
+        tweeter.removePost(path.slice(-2))
+        const ren = tweeter.getPosts()
+        renderPosts(ren)
+        return
+    } else {
+        const nc = $("#t" + path).val()
+        tweeter.addComment(nc, path)
+        const ren = tweeter.getPosts()
+        renderPosts(ren)
+    }
 })
-const a = tweeter.getPosts()
-console.log(a)
+
+$("#posts").on("click", "span", function () {
+
+    tweeter.removeComment($(this).data("span"), $(this).parent().attr('id'))
+    const ren = tweeter.getPosts()
+    renderPosts(ren)
+
+})

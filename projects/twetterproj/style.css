@@ -1,35 +1,34 @@
-
-body{
+body {
     background-color: #ecf0f1;
     font-family: 'Balthazar', serif;
 }
 
-#container{
+#container {
     display: grid;
     grid-gap: 20px;
     padding-left: 25px;
     padding-right: 25px;
     grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-    "h .""i b""p p"
+    grid-template-areas:
+        "h ." "i b" "p p"
 }
 
-#header{
+#header {
     grid-area: h;
     color: #3498db;
 }
 
-#input{
+#input {
     grid-area: i;
     padding: 10px;
     font-size: 1.5vw;
 }
 
-#posts{
+#posts {
     grid-area: p;
 }
 
-#post{
+#post {
     grid-area: b;
     padding: 10px;
     background-color: #3498db;
@@ -41,7 +40,7 @@ body{
     font-size: 2.5vw;
 }
 
-.post{
+.post {
     box-shadow: 1px 1px 3px;
     margin: 10px;
     border-radius: 5px;
@@ -49,21 +48,21 @@ body{
     font-weight: bold;
 }
 
-#post:active{
+#post:active {
     background-color: #2980b9
 }
 
-.post-text{
+.post-text {
     font-weight: bold;
 }
 
-.comments{
+.comments {
     margin-left: 10px;
     margin: 10px;
     font-weight: normal;
 }
 
-.delete{
+.delete {
     cursor: pointer;
     color: #ecf0f1;
     background-color: #e74c3c;
@@ -73,7 +72,12 @@ body{
     font-size: 0.8em;
 }
 
-.delete-comment{
+.delete-comment {
     cursor: pointer;
     color: #e74c3c;
+}
+
+.commentbtn {
+    background-color: green;
+    color: whitesmoke;
 }
