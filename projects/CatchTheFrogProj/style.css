@@ -1,0 +1,74 @@
+
+
+#timer{
+    position: relative;
+    left: 50%;
+    font-size: larger;
+    top: 30px;
+    color: white;
+}
+
+#game{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr 2fr;
+    grid-template-areas: 
+    "n n n"
+    "p p p"
+    "b b b";
+}
+#nav{
+    grid-area: n;
+    background-color: rgb(67, 102, 13);
+}
+#playboard{
+    grid-area: p;
+    background-color: green
+}
+
+button{
+    background-color: greenyellow;
+    font-style: italic;
+    font-size: larger;
+}
+#button{
+    grid-area: b;
+    background-color: greenyellow;
+    display: contents;
+  
+    
+}
+input{
+    background-color: darkgreen;
+    text-align:center;
+    font-style: italic;
+    font-size: larger;
+    color: white;
+}
+/* #textleft{
+    text-align:center;
+    font-style: italic;
+    font-size: larger;
+    color: white;
+}
+#textright{
+    text-align:center;
+    font-style: italic;
+    font-size: larger;
+    color: white;
+} */
+#gamelevel{
+    /* justify-self: end;
+    font-size: 30px;
+    position: relative;
+    bottom: 40px;
+    right: 20px; */
+    color: blueviolet;
+}
+.forg{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    color:rgb(253, 0, 0);
+}

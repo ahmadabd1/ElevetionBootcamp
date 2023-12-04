@@ -1,0 +1,42 @@
+{
+    "animal1":[{
+
+    "name1": "lion",
+    "weight": [
+        {
+            "kg": 100,
+            "tons": 0.1
+        }
+    ],
+    "live": "new york",
+    "endangered": true,
+    "kindsOfFoodEat": [
+        "sheep",
+        "cow"
+    ],
+    "namesOfAnimalsThatEatIt": [
+        "elephent"
+    ],
+    "rateDelcuois": 3
+    },
+    {
+    "name1": "lion",
+    "weight": [
+        {
+            "kg": 100,
+            "tons": 0.1
+        }
+    ],
+    "live": "new york",
+    "endangered": true,
+    "kindsOfFoodEat": [
+        "sheep",
+        "cow"
+    ],
+    "namesOfAnimalsThatEatIt": [
+        "elephent"
+    ],
+    "rateDelcuois": 3
+    }
+]
+}

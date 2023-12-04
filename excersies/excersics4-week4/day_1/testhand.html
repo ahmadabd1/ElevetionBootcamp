@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testhandlebars</title>
+</head>
+<body>
+    <script id="first-template" type="text/x-handlebars-template">   
+        My text: {{text}}
+      </script>
+      
+      <div id="normal">Regular HTML Stuff</div>
+      
+      <script id="second-template" type="text/x-handlebars-template">   
+      My HB text: {{moreText}}
+      </script>
+      
+      <p id="special"></p>
+      
+      <script id = "names-template" type="text/x-handlebars-template">
+        <ul class="people_list">
+            {{#each data}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+    </script>
+    <div id="animal"></div>
+    <div id="lang"></div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="testhand.js"></script>
+</body>
+</html>
