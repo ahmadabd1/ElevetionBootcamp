@@ -18,6 +18,6 @@ $("#start").on("click",function(){
 $("#playboard").on("click",".frog",function(){
     setTime(5)
     startTimer(time);
-    rend.rendBoard($(this))
+    rend.rendBoard($(this).closest(".frog"))
 
 })
