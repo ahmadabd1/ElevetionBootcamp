@@ -1,0 +1,83 @@
+/* body{
+    font-family: Arial, sans-serif;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 10fr 2fr ;
+    grid-template-rows: 2fr 2fr 2fr 2fr 3fr;
+    
+} */
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 700px;
+    background-color: #095fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+   
+  }
+
+  .user-image {
+    max-width: 130px;
+    border-radius: 50%;
+  }
+  .namcity{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+.friends-list{
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 200px;
+    background-color: #095fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    left: 90%;
+    /* top: 0px; */
+    align-items: center;
+    justify-content:center;
+}
+.pokemon-image {
+    max-width: 100px;
+    border-radius: 50%;
+  }
+  .pokemon{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 700px;
+   
+  
+  }
+  .separator {
+    border-top: 1px solid #000000;
+    margin: 20px 10px;
+    width: 50%;
+  }
+  .about-me {
+    text-align: left;
+  }
+  .user-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid #3498db;
+    color: #3498db;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .user-button:hover {
+    background-color: #3498db;
+    color: #00ff00;
+  }
+  .button-container {
+    text-align: start;
+    position: relative;
+    top: 300px;
+  }

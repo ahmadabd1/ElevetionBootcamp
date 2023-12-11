@@ -1,5 +1,8 @@
 
-
+body{
+    height: auto;
+    width: auto;
+}
 #timer{
     position: relative;
     left: 50%;
@@ -23,6 +26,8 @@
     background-color: rgb(67, 102, 13);
 }
 #playboard{
+    width: 100%;
+    height: 100%;
     grid-area: p;
     background-color: green
 }
@@ -46,29 +51,18 @@ input{
     font-size: larger;
     color: white;
 }
-/* #textleft{
-    text-align:center;
-    font-style: italic;
-    font-size: larger;
-    color: white;
-}
-#textright{
-    text-align:center;
-    font-style: italic;
-    font-size: larger;
-    color: white;
-} */
-#gamelevel{
-    /* justify-self: end;
-    font-size: 30px;
+h1{
+    color: aliceblue;
+    font-family:'Times New Roman', Times, serif;
     position: relative;
-    bottom: 40px;
-    right: 20px; */
-    color: blueviolet;
+    left: 50%;
+    font-size: larger;
+    font-style: italic;
+    
 }
-.forg{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(0, 0, 0);
+.frog{
+    width: 50px;
+    height: 50px;
+    position: relative;
     color:rgb(253, 0, 0);
 }

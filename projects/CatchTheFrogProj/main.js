@@ -1,23 +1,17 @@
-const gameM = GameModel()
-const rend = makeRend()
+const gameM = GameModel();
+const rend = makeRend();
 
 
-// gameM.startTimer()
-// rend.rendTime()
+$("#start").on("click", function(){
+    if (!isTimerRunning) {
+        startTimer(5); // Start the timer if it's not running
+        isTimerRunning = true;
+    }
+    rend.startGame(); // Initialize the game
+});
 
-$("#start").on("click",function(){
-    // gameM.addLevel(
-        setTime(5)
-        startTimer(time);
-        rend.startGame()
-            
-
-       
-    
-})
-$("#playboard").on("click",".frog",function(){
-    setTime(5)
-    startTimer(time);
-    rend.rendBoard($(this).closest(".frog"))
-
-})
+$("#playboard").on("click", ".frog", function(){
+    rend.rendBoard($(this)); // Handle the frog click rend
+    rend.startGame();
+    resetTimer(5); // Reset the timer when trying again
+});

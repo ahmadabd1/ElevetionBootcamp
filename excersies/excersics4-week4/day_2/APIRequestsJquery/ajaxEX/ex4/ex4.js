@@ -29,6 +29,8 @@ const fetch = function (nameanimal) {
 
 fetch("cats")
 let inputVal = $("#name")
+
+
 const render=function(){
     output.empty()
     fetch(inputVal.val())
