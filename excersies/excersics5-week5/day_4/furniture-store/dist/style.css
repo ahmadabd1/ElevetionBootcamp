@@ -1,0 +1,8 @@
+div{
+    display: contents;
+    background-color: #dfbb9c;
+    box-shadow: 1px 1px 3px black;
+}
+.container{
+    display: contents;
+}
