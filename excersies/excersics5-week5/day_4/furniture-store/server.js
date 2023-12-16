@@ -2,18 +2,32 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
-
-//EX 3
-app.use(express.static(path.join(__dirname, 'dist')))
-app.use(express.static(path.join(__dirname, 'node_modules')))
-
-
+// to amke sure that the postman doing what do you expected
+const bodyParser = require("body-parser")
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended : false}))
 const store = [
     { name: "table", inventory: 3, price: 800 },
     { name: "chair", inventory: 16, price: 120 },
     { name: "couch", inventory: 1, price: 1200 },
     { name: "picture frame", inventory: 31, price: 70 }
 ]
+
+app.get('/',function(req,res){
+    res.send(store)
+})
+app.post('/',function(req,res){
+    console.log(req.body)
+    store.push(req.body)
+    
+})
+
+//EX 3
+app.use(express.static(path.join(__dirname, 'dist')))
+app.use(express.static(path.join(__dirname, 'node_modules')))
+
+
+
 
 
 //EX 2
@@ -80,6 +94,7 @@ app.get('/sale',function(req,res){
     res.send(store)
 
 })
+
 
 
 const port = 3000
